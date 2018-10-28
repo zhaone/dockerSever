@@ -46,7 +46,7 @@
 ```
 ## 程序功能
 较简单，将sever的代码在docker容器内编译部署；本机运行client_main，输入字符串，服务器统计字符串个数并返回给client（多线程，可以同时打开多个client）:
-![image](http://github.com/zhaone/dockerSever/raw/master/img/run.png)
+![image](https://github.com/zhaone/dockerSever/blob/master/img/run.png)
 ## 运行环境
 - 操作系统：ubuntu16.04
 - docker基础镜像：ubuntu:16.04
@@ -58,8 +58,8 @@
 
 ## 问题
 1. 是新版的client代码，client\_code\_可用 是老版的client代码。今天两个代码编译的时候都成功，但是运行都报下面的错误，我还没找到什么原因。拿了以前的一个可以工作的client_main（老版的client代码编译的）来使用（同样的编译方式和代码，以前的没报错不知道为啥...）
-![image](http://github.com/zhaone/dockerSever/raw/master/img/err1.png)
+![image](https://github.com/zhaone/dockerSever/blob/master/img/err1.png)
 2.docker服务器启动时，如果在dockerfile里面用```CMD /sever_main```，或者```docker run -it -p 8888:8888 ubuntu:sever /sever_main```启动，都会出现以下错误，我还不知道怎么解决
-![image](http://github.com/zhaone/dockerSever/raw/master/img/err2.png)
+![image](https://github.com/zhaone/dockerSever/blob/master/img/err2.png)
 
 > 赵懿 yizhaome@gmail.com
