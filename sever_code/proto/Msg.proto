@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package demo;
+
+message Msg
+{
+	required string name=1;
+	enum MsgType
+	{
+		CTL=0;
+		DATA=1;
+	}
+	required MsgType msg_type=2;
+	required string info=3;
+}

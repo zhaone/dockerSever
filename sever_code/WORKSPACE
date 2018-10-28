@@ -1,0 +1,6 @@
+new_local_repository(
+    name = "protobuf",
+    path = "/usr/protobuf/lib",
+    build_file = "protobuf.BUILD",
+)
+
